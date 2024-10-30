@@ -1,6 +1,6 @@
 import ArraysAndHashing.*;
 import SlidingWindow.*;
-import Stack.ValidParentheses;
+import Stack.*;
 import TwoPointers.*;
 
 import java.util.Arrays;
@@ -38,6 +38,12 @@ public class Main {
 
         //Stack
         System.out.println("20. Valid parentheses: " + new ValidParentheses().solution());
+        System.out.println("21. Eval reverse polish notation: " + new EvalReversePolishNotation().solution());
+        // TODO: complete this
+        System.out.println("22. Generate parentheses: " + new GenerateParentheses().solution());
+        System.out.println("23. Daily temperatures: " + Arrays.toString(new DailyTemperatures().solution()));
+        System.out.println("24. Car fleet: " + new CarFleet().solution());
+
         //BinarySearch
         //LinkedList
         //Trees

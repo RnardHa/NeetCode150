@@ -1,6 +1,6 @@
 import ArraysAndHashing.*;
-import SlidingWindow.BestTimeToBuyAndSellStock;
-import SlidingWindow.LongestSubstringWithoutDuplicate;
+import SlidingWindow.*;
+import Stack.ValidParentheses;
 import TwoPointers.*;
 
 import java.util.Arrays;
@@ -30,6 +30,24 @@ public class Main {
         //SlidingWindow
         System.out.println("14. Best time to buy and sell stock: " + new BestTimeToBuyAndSellStock().solution());
         System.out.println("15. Longest substring without duplicate: " + new LongestSubstringWithoutDuplicate().solution());
+        System.out.println("16. Longest repeating substring with replacement: " + new LongestRepeatingSubstringWithReplacement().solution());
+        // TODO: complete these 3
+        System.out.println("17. Permutation string: " + new PermutationString().solution());
+        System.out.println("18. Min window with characters: " + new MinWindowWithCharacters().solution());
+        System.out.println("19. Sliding Window max: " + Arrays.toString(new SlidingWindowMax().solution()));
+
+        //Stack
+        System.out.println("20. Valid parentheses: " + new ValidParentheses().solution());
+        //BinarySearch
+        //LinkedList
+        //Trees
+        //Heap/PriorityQueue
+        //Backtracking
+        //Tries
+        //Graphs
+        //AdvancedGraphs
+
+
 
     }
 }

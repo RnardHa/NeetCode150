@@ -42,7 +42,9 @@ public class Main {
         // TODO: complete this
         System.out.println("22. Generate parentheses: " + new GenerateParentheses().solution());
         System.out.println("23. Daily temperatures: " + Arrays.toString(new DailyTemperatures().solution()));
+        // TODO: revisit this qn
         System.out.println("24. Car fleet: " + new CarFleet().solution());
+        System.out.println("25. Largest rectangle in histogram: " + new LargestRectangleInHistogram().solution());
 
         //BinarySearch
         //LinkedList

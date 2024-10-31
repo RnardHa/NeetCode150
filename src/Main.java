@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import BinarySearch.*;
 import SlidingWindow.*;
 import Stack.*;
 import TwoPointers.*;
@@ -42,11 +43,15 @@ public class Main {
         // TODO: complete this
         System.out.println("22. Generate parentheses: " + new GenerateParentheses().solution());
         System.out.println("23. Daily temperatures: " + Arrays.toString(new DailyTemperatures().solution()));
-        // TODO: revisit this qn
+        // TODO: revisit this 2 qns
         System.out.println("24. Car fleet: " + new CarFleet().solution());
         System.out.println("25. Largest rectangle in histogram: " + new LargestRectangleInHistogram().solution());
 
         //BinarySearch
+        System.out.println("26. Binary search: " + new BinarySearch().solution());
+        System.out.println("27. Search 2d matrix: " + new Search2DMatrix().solution());
+        System.out.println("28. Min eating speed: " + new MinEatingSpeed().solution());
+
         //LinkedList
         //Trees
         //Heap/PriorityQueue

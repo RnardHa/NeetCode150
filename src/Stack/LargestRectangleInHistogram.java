@@ -4,30 +4,29 @@ import java.util.Stack;
 
 public class LargestRectangleInHistogram {
     public int solution() {
-        return largestRectangleArea(new int[]{1,3,7});
+        return largestRectangleArea(new int[]{2,1,5,6,2,3});
     }
 
     public int largestRectangleArea(int[] heights) {
         int len = heights.length;
-
+        int max = 0;
         Stack<int[]> stack = new Stack<>();
+
         for (int i = 0; i < len; i++) {
-            while(!stack.isEmpty() && heights[i] >= stack.peek()[0]) {
-                stack.pop();
+            int start = i;
+            while(!stack.isEmpty() && stack.peek()[0] > heights[i]) {
+                var item = stack.pop();
+                var area = item[0] * (i - item[1]);
+                max = Math.max(max, area);
+                start = item[1];
             }
-            stack.push(new int[]{heights[i], i});
+            stack.push(new int[]{heights[i], start});
         }
 
-        int ans = 0;
-        //getting solution
-        if (stack.size() == 1) {
-            ans = stack.peek()[0];
-        } else {
-            var last = stack.lastElement();
-            var first = stack.firstElement();
-            ans = (last[1] - first[1] + 1) * Math.min(first[0], last[0]);
+        for (var pair : stack) {
+            max = Math.max(max, pair[0] * (len - pair[1]));
         }
 
-        return ans;
+        return max;
     }
 }

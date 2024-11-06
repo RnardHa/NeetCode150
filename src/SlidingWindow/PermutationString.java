@@ -1,5 +1,6 @@
 package SlidingWindow;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,23 +10,32 @@ public class PermutationString {
     }
 
     public boolean checkInclusion(String s1, String s2) {
-        // find the shorter string
-        // use that string as the string to compare
-        String shortest = s1.length() < s2.length() ? s1 :  s2;
-        String longest = s1.length() < s2.length() ? s2 :  s1;
-
-        Map<Character, Integer> map = new HashMap<>();
-
-        for (int i = 0; i < shortest.length(); i ++) {
-            map.put(shortest.charAt(i), map.getOrDefault(shortest.charAt(i), 0) + 1);
+        if (s1.length() > s2.length()) {
+            return false;
         }
 
-        int left = 0;
-        for (int r = 0; r < longest.length(); r++) {
+        int[] permutationCombo = new int[26];
+        int[] wimCount = new int[26];
 
+        for (int i = 0; i < s1.length(); i++) {
+            permutationCombo[s1.charAt(i) - 'a'] += 1;
+            wimCount[s2.charAt(i) - 'a'] += 1;
+        }
+
+        if (Arrays.equals(permutationCombo, wimCount)){
+            return true;
+        }
+
+        for (int i = s1.length(); i < s2.length(); i++) {
+            wimCount[s2.charAt(i) - 'a'] += 1;
+            wimCount[s2.charAt(i - s1.length()) - 'a'] -= 1;
+            if (Arrays.equals(permutationCombo, wimCount)){
+                return true;
+            }
         }
 
         return false;
+
     }
 
 }

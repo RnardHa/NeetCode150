@@ -3,13 +3,11 @@ import BinarySearch.*;
 import HeapOrPriorityQueue.KClosestPointToOrigin;
 import HeapOrPriorityQueue.KthLargestElementInArray;
 import HeapOrPriorityQueue.LastStoneWeight;
+import HeapOrPriorityQueue.TaskScheduling;
 import LinkedList.*;
 import SlidingWindow.*;
 import Stack.*;
-import Tree.BalancedBinaryTree;
-import Tree.BinaryTreeDiameter;
-import Tree.DepthOfBinaryTree;
-import Tree.InvertABinaryTree;
+import Tree.*;
 import TwoPointers.*;
 
 import java.util.Arrays;
@@ -36,6 +34,8 @@ public class Main {
         System.out.println(i++ + ". Three sum: " + new ThreeSum().solution());
         System.out.println(i++ + ". Max water container: " + new MaxWaterContainer().solution());
         System.out.println(i++ + ". Trapping rain water: " + new TrappingRainWater().solution());
+        System.out.println(i++ + ". Remove element: " + new RemoveElement().solution());
+        System.out.println(i++ + ". Remove duplicate: " + new RemoveDuplicate().solution());
 
         //SlidingWindow
         System.out.println(i++ + ". Best time to buy and sell stock: " + new BestTimeToBuyAndSellStock().solution());
@@ -83,16 +83,28 @@ public class Main {
         System.out.println(i++ + ". Binary tree diameter: " + new BinaryTreeDiameter().solution());
         // TODO: revisit this
         System.out.println(i++ + ". Balanced binary tree: " + new BalancedBinaryTree().solution());
+        System.out.println(i++ + ". Subtree if a binary tree: " + new SubtreeOfABinTree().solution());
+        System.out.println(i++ + ". Binary tree level traversal: " + new BinaryTreeLevelOrderTraversal().solution());
 
         //Heap/PriorityQueue
         System.out.println(i++ + ". Last stone weight: " + new LastStoneWeight().solution());
         // TODO: revisit this
         System.out.println(i++ + ". K closest point to origin: " + Arrays.deepToString(new KClosestPointToOrigin().solution()));
         System.out.println(i++ + ". K largest in an array: " + new KthLargestElementInArray().solution());
+        // TODO: revisit this
+        System.out.println(i++ + ". Task scheduling: " + new TaskScheduling().solution());
+
         //Backtracking
+
         //Tries
         //Graphs
         //AdvancedGraphs
+        //1-D DynamicProgramming
+        //2-D DynamicProgramming
+        //Greedy
+        //Intervals
+        //MathAndGeometry
+        //BitManipulation
 
 
 

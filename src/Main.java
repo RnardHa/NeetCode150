@@ -86,6 +86,7 @@ public class Main {
         System.out.println(i++ + ". Subtree if a binary tree: " + new SubtreeOfABinTree().solution());
         System.out.println(i++ + ". Binary tree level traversal: " + new BinaryTreeLevelOrderTraversal().solution());
         System.out.println(i++ + ". Binary tree right side view: " + new BinaryTreeRightSideView().solution());
+        System.out.println(i++ + ". Count good nodes im bin tree: " + new CountGoodNodesInBinaryTree().solution());
 
         //Heap/PriorityQueue
         System.out.println(i++ + ". Last stone weight: " + new LastStoneWeight().solution());

@@ -5,8 +5,11 @@ import HeapOrPriorityQueue.KthLargestElementInArray;
 import HeapOrPriorityQueue.LastStoneWeight;
 import HeapOrPriorityQueue.TaskScheduling;
 import LinkedList.*;
+import Random.*;
 import SlidingWindow.*;
+import SlidingWindow.BestTimeToBuyAndSellStock;
 import Stack.*;
+import Stack.ValidParentheses;
 import Tree.*;
 import TwoPointers.*;
 
@@ -107,6 +110,16 @@ public class Main {
         //Intervals
         //MathAndGeometry
         //BitManipulation
+
+        //Random
+        System.out.println(i++ + ". Valid Parentheses: " + new Random.ValidParentheses().solution());
+        System.out.println(i++ + ". Best time to buy and sell stock: " + new Random.BestTimeToBuyAndSellStock().solution());
+        System.out.println(i++ + ". Palindrome number: " + new PalindromeNumber().solution());
+        System.out.println(i++ + ". Two sum: " + Arrays.toString(new TwoSum().solution()));
+//        System.out.println(i++ + ". Reverse integer: " + new ReverseInteger().solution());
+        System.out.println(i++ + ". MaxSubArray: " + new MaxSubArray().solution());
+        System.out.println(i++ + ". Intersecting array: " + Arrays.toString(new IntersectionBetweenTwoArray().solution()));
+
 
 
 
